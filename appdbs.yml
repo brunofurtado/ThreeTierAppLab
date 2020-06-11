@@ -1,0 +1,7 @@
+- name: deploy postgres
+  hosts: appdbs
+  gather_facts: true 
+  become: true
+
+  roles:
+    - geerlingguy.postgresql

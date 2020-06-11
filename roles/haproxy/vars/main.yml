@@ -1,0 +1,4 @@
+---
+# vars file for haproxy
+
+GUID: "{{ lookup('env', 'GUID') }}"
