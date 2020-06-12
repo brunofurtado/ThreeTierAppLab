@@ -1,4 +1,7 @@
 ---
+- name: include vars
+  include_vars: ../vars/main.yml
+
 - name: install HAProxy
   yum:
     name: haproxy
@@ -11,7 +14,7 @@
 
 - name: configure haproxy
   template:
-    src: templates/haproxy.cfg.j2
+    src: ../templates/haproxy.cfg.j2
     dest: /etc/haproxy/haproxy.cfg
   notify: restart_haproxy
 
