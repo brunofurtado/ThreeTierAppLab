@@ -52,9 +52,7 @@ postgresql_databases:
 #   state: # defaults to 'present'
 
 # Users to ensure exist.
-postgresql_users:
-  - name: bfurtado
-    password: '{{ login_password }}'
+postgresql_users: []
 #postgresql_users: []
 # - name: jdoe #required; the rest are optional
 #   password: # defaults to not set
