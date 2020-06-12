@@ -1,5 +1,5 @@
 ---
-include_vars: ../vars/vault.yaml
+include_vars: ../vars/vault.yml
 
 # RHEL/CentOS only. Set a repository to use for PostgreSQL installation.
 postgresql_enablerepo: ""
